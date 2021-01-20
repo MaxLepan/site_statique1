@@ -1,0 +1,84 @@
+.article{
+	height: 300px;
+	width: 300px;
+
+	z-index: -2;
+}
+
+#chausson{
+	position: absolute;
+	left: 25%;
+	top:30%;
+	background-image: url(../Images/chausson_escalade.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#baudrier{
+	position: absolute;
+	left: 50%;
+	top:30%;
+	background-image: url(../Images/baudrier.jpg);
+	background-size: cover;
+	background-position: center top;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#panier{
+	position: absolute;
+	left: 75%;
+	top:30%;
+	background-image: url(../Images/panier_escalade.jpg);
+	background-size: cover;
+	background-position: center top;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#filtres{
+	position: relative;
+	top: 250px;
+	left: 2%;
+	width: 350px;
+
+	z-index: -2;
+}
+
+.descr{
+	position: relative;
+	top: 102%;
+	font-size: 120%;
+}
+
+.select{
+	position: relative;
+	float: right;
+}
+
+.text{
+	font-size: 
+}
+
+#boutonReset{
+	position: relative;
+	top: 50px;
+	left: 29%;
+}
+
+#boutonRech{
+	position: relative;
+	top: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

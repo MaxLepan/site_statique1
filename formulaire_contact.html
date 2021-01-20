@@ -1,0 +1,86 @@
+<!--Mettre le bandeau quand terminé-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style_pages.css">
+	<link rel="stylesheet" type="text/css" href="css/style_bandeau.css">
+	<link rel="stylesheet" type="text/css" href="css/style_contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+		<header class="header">
+			<div id="logo"></div>
+			<div>
+				<h1 class="headerCursive" id="titre"><a href="index.html">Grim'pète</a></h1>
+				<img src="Images/imgFondBanner6.jpg" alt="imgFondBanner" id="imgFond" style="width: 105%; height: 280px">
+				<h2 class="headerCursive" id="slogan">Slogan</h2>
+				<br>
+			</div>
+			<nav>
+				<div id="bandeau">
+					<form name="formulaire">
+						<a href="produits.html" class="text" id="boutique">BOUTIQUE</a>
+						<a href="formulaire_contact.html" class="text" id="contact">CONTACT</a>
+						<a href="spots_grimpe.html" class="text" id="spots">SPOTS</a>
+						<div id="search">
+							<input type="text" name="barreDeRecherche" placeholder="Votre recherche" class="text" id="recherche" required></input>
+							<input type="submit" name="rechercher" value="Rechercher" class="text" id="boutonRecherche"><a href="spots_grimpe.html"></a></input> <!--l'input submit à changer-->
+						</div>
+					</form>
+				</div>
+			</nav>
+		</header>
+	<div id="nousContacter" class="text">
+		<section id="coord">
+			<h4>Coordonnées</h4>
+			<br>
+			<h5>Adresse</h5>
+			<br>
+			<p>25 Avenue de la République, 74960, Cran Gevrier</p>
+			<br>
+			<h5>Numéro de téléphone</h5>
+			<br>
+			<p>07 83 44 71 68</p>
+			<br>
+			<br>
+			<div id="reseaux">
+				<a href="https://www.youtube.com/" target="_blank"><div class="reseaux" id="ytb"></div></a>
+				<a href="https://twitter.com/home" target="_blank"><div class="reseaux" id="twitter"></div></a>
+				<a href="https://www.instagram.com/?hl=fr" target="_blank"><div class="reseaux" id="instagram"></div></a>
+			</div>
+		</section>
+		<section id="formulaire">
+			<h4>Fomulaire de contact</h4>
+			<br>
+			<form>
+				<input type="text" name="nom" placeholder="Quel est votre nom ?" required></input>
+				<br>
+				<br>
+				<input type="email" name="email" placeholder="Votre email" required></input>
+				<br>
+				<br>
+				<textarea name="mailContent" placeholder="Le contenu de votre mail" rows="7" cols="30" required></textarea>
+				<br>
+				<br>
+				<input type="checkbox" value="newsletter" name="newsletter" checked>Souhaitez-vous vous abonner à notre newsletter ?</input>
+				<br>
+				<br>
+				<input type="submit" value="Envoyer">
+			</form>
+		</section>
+		<div id="carre"></div>
+		<div id="feuilles"></div>
+		<div id="climb"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!--Mettre le bandeau quand terminé-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spots de grimpe</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style_pages.css">
+	<link rel="stylesheet" type="text/css" href="css/style_bandeau.css">
+	<link rel="stylesheet" type="text/css" href="css/style_spots.css">
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+		<header class="header">
+			<div id="logo"></div>
+			<div>
+				<h1 class="headerCursive" id="titre"><a href="index.html">Grim'pète</a></h1>
+				<img src="Images/imgFondBanner6.jpg" alt="imgFondBanner" id="imgFond" style="width: 105%; height: 280px">
+				<h2 class="headerCursive" id="slogan">Slogan</h2>
+				<br>
+			</div>
+			<nav>
+				<div id="bandeau">
+					<form name="formulaire">
+						<a href="produits.html" class="text" id="boutique">BOUTIQUE</a>
+						<a href="formulaire_contact.html" class="text" id="contact">CONTACT</a>
+						<a href="spots_grimpe.html" class="text" id="spots">SPOTS</a>
+						<div id="search">
+							<input type="text" name="barreDeRecherche" placeholder="Votre recherche" class="text" id="recherche" required></input>
+							<input type="submit" name="rechercher" value="Rechercher" class="text" id="boutonRecherche"><a href="spots_grimpe.html"></a></input> <!--l'input submit à changer-->
+						</div>
+					</form>
+				</div>
+			</nav>
+		</header>
+	<section id="filtres">
+		<form name="filtres">
+			<input type="text" name="lieu" placeholder="Ville, commune" id="ville">
+			<br>
+			<div id="intExt">
+				<input type="radio" value="interieur" name="intExt"  class="radio"><p id="int" class="text">Intérieur</p></input>
+				<br>
+				<input type="radio" value="exterieur" name="intExt"  class="radio"><p id="ext" class="text">Extérieur</p></input>
+			</div>
+			<table id="tableau" class="text">
+				<caption class="text2">Choisissez vos difficultés</caption>
+				<tr>
+					<td>  </td>
+					<td class="text2">a</td>
+					<td class="text2">b</td>
+					<td class="text2">c</td>
+				</tr>
+				<tr>
+					<td class="text2" >4</td>
+					<td><input type="checkbox" value="4a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="4b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="4c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+				<tr>
+					<td class="text2">5</td>
+					<td><input type="checkbox" value="5a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="5b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="5c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+				<tr>
+					<td class="text2">6</td>
+					<td><input type="checkbox" value="6a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="6b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="6c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+				<tr>
+					<td class="text2">7</td>
+					<td><input type="checkbox" value="7a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="7b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="7c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+				<tr>
+					<td class="text2">8</td>
+					<td><input type="checkbox" value="8a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="8b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="8c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+				<tr>
+					<td class="text2">9</td>
+					<td><input type="checkbox" value="9a" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="9b" name="difficulte" class="checkbox"></input></td>
+					<td><input type="checkbox" value="9c" name="difficulte" class="checkbox"></input></td>
+				</tr>
+			</table>
+			<input type="reset" name="Recommencer" value="Supprimer les filtres" id="boutonReset" />
+			<input type="submit" name="rechercher" value="Rechercher" id="boutonRech" />
+		</form>
+	</section>
+	<br>
+	<article> 
+		<div class="spotTest" id="bloc_ext1">
+			<!--<img src="Images/bloc_ext1.jpg" style="width: 300px";>-->
+			<p class="text descr">Lieu<br> difficulté<br> intérieur/extérieur...</p>
+		</div>
+		<div class="spotTest" id="bloc_int1">
+			<!--<img src="Images/bloc_int1.jpg" style="width: 300px; ">-->
+			<p class="text descr">Lieu<br> difficulté<br> intérieur/extérieur...</p>
+		</div>
+		<div class="spotTest" id="bloc_ext2">
+			<!--<img src="Images/bloc_ext2.jpg" style="width: 300px">-->
+			<p class="text descr">Lieu<br> difficulté<br> intérieur/extérieur...</p>
+		</div>
+	</article>	
+	<div id="carre"></div>
+	<div id="feuilles"></div>
+</body>
+</html>

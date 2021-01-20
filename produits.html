@@ -1,0 +1,95 @@
+<!--Mettre le bandeau quand terminé-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boutique</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style_pages.css">
+	<link rel="stylesheet" type="text/css" href="css/style_bandeau.css">
+	<link rel="stylesheet" type="text/css" href="css/style_produits.css">
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+		<header class="header">
+			<div id="logo"></div>
+			<div>
+				<h1 class="headerCursive" id="titre"><a href="index.html">Grim'pète</a></h1>
+				<img src="Images/imgFondBanner6.jpg" alt="imgFondBanner" id="imgFond" style="width: 105%; height: 280px">
+				<h2 class="headerCursive" id="slogan">Slogan</h2>
+				<br>
+			</div>
+			<nav>
+				<div id="bandeau">
+					<form name="formulaire">
+						<a href="produits.html" class="text" id="boutique">BOUTIQUE</a>
+						<a href="formulaire_contact.html" class="text" id="contact">CONTACT</a>
+						<a href="spots_grimpe.html" class="text" id="spots">SPOTS</a>
+						<div id="search">
+							<input type="text" name="barreDeRecherche" placeholder="Votre recherche" class="text" id="recherche" required></input>
+							<input type="submit" name="rechercher" value="Rechercher" class="text" id="boutonRecherche"><a href="spots_grimpe.html"></a></input> <!--l'input submit à changer-->
+						</div>
+					</form>
+				</div>
+			</nav>
+		</header>
+		
+	<div id="filtres">
+		<form name="filtres">
+			<label for="difficulte" class="text">Prix</label>
+			<input type="range" name="difficulte" min="4" max="300" class="select"/>
+			<br>
+			<br>
+			<label for="Utilisation" class="text">Utilisation</label>
+			<select name="Utilisation" class="text select">
+				<option value="0">--Sélectionner--</option>
+				<option value="1">Bloc</option>
+				<option value="2">Indoor</option>
+				<option value="3">Via ferrata</option>
+				<option value="4">Alpinisme/Grande voie</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<label for="typeDeProduits" class="text">Type de produits</label>
+			<select name="typeDeProduits" class="text select">
+				<option value="0">--Sélectionner--</option>
+				<option value="1">Assureurs</option>
+				<option value="2">Bloqueurs</option>
+				<option value="3">Accessoires de bloc</option>
+				<option value="4">Cordes</option>
+				<option value="5">Sacs à magnésie</option>
+				<option value="6">Tapis</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<label for="user" class="text">Profil de l'utilisateur</label>
+			<select name="user" class="text select">
+				<option value="0">--Sélectionner--</option>
+				<option value="1">Débutant</option>
+				<option value="2">Intermédiaire</option>
+				<option value="3">Confirmé</option>
+				<option value="4">Expert</option>
+			</select>
+			<input type="reset" name="Recommencer" value="Supprimer les filtres" id="boutonReset" class="text" />
+			<input type="submit" name="rechercher" value="Rechercher" id="boutonRech" class="text" />
+		</form>
+	</div>
+	<article>
+		<div class="article" id="chausson">
+			<p class="text descr">Prix<br> notes<br> commentaires...</p>
+		</div>
+		<div class="article" id="baudrier">
+			<p class="text descr">Prix<br> notes<br> commentaires...</p>
+		</div>
+		<div class="article" id="panier">
+			<p class="text descr">Prix<br> notes<br> commentaires...</p>
+		</div>
+	</article>
+	<div id="carre"></div>
+	<div id="feuilles"></div>
+</body>
+</html>
